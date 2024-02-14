@@ -1,0 +1,2 @@
+# StudySync
+Website layout
