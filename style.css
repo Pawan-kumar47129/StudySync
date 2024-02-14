@@ -182,7 +182,7 @@ body{
 
 .hero-section{
     width: 100vw;
-    padding-top:7rem;
+    padding-top:4rem;
     /* overflow-x: hidden; */
 }
 .hero-div{
@@ -200,8 +200,19 @@ body{
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-
+    animation: sider 1s linear 0.2s ;
 }
+/* Animation */
+
+@keyframes sider {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
 .intro{
     font-size: 1.4rem;
     font-weight: 600;
@@ -287,5 +298,59 @@ body{
     } 
 }
 
+/* // company container */
+.company-container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    animation: sider 1s linear 0.3s;
+    
+}
+.All-company{
+    width: 50rem;
+    height: 6rem;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    background-color: var(--light-gray);
+    /* justify-items: center; */
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
 
+.company-title{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.company-logo-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px auto;
+}
+.company-logo-box img {
+    height: 2rem;
+    width: 2rem;
+}
+.company-logo-box span{
+    font-size: 0.8rem;
+    color: var(--gray);
+    font-weight: 600;
+}
+/* reposive */
+@media screen and (max-width:840px) {
+    .All-company{
+    grid-template-columns:repeat(2,1fr);
+    width: 80vw;
+    height: 8rem;
+    }
+    .company-title{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
 
