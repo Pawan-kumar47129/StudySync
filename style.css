@@ -239,7 +239,8 @@ body{
 }
 .hero-btn{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    margin-top: 1rem;
 }
 #Start-btn,#Tour-btn{
     font-size: 1.1rem;
@@ -351,11 +352,11 @@ body{
     color: var(--gray);
     font-weight: 600;
 }
-/* reposive */
-@media screen and (max-width:840px) {
+/* reposive for company container */
+@media screen and (max-width:750px) {
     .All-company{
     grid-template-columns:repeat(2,1fr);
-    width: 80vw;
+    max-width: 90vw;
     height: 8rem;
     }
     .company-title{
@@ -364,3 +365,96 @@ body{
     }
 }
 
+/* feature container */
+
+.feature-container{
+    margin:2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    overflow-x: hidden;
+}
+.feature-title{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.feature-header{
+    font-size:2rem;
+    font-weight:600;
+    text-align: center;
+    color:var(--text-color)
+}
+.feature-content{
+    text-align: center;
+    font-size: 1rem;
+    color:var(--gray);
+}
+.feature-cart-container{
+    display:grid;
+    grid-template-columns: repeat(2,minmax(350px,400px));
+    gap:2rem;
+}
+.feature-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    color:var(--light-gray);
+}
+#cart1{
+    background-color: #4a90e2;
+}
+#cart2{
+    background-color:#FF6289;
+}
+#cart3{
+    background-color: #fcbf58;
+}
+#cart4{
+    background-color:  #44bfc3;
+}
+#cart5{
+    background-color: #77b05d;
+}
+#cart6{
+    background-color: #7d78b1;
+}
+
+.cart-img-log-container{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--background-color);
+}
+.cart-img-log{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.cart-content{
+    text-align: center;
+}
+/*  responsive feature blog */
+@media screen and (max-width:750px) {
+    .feature-cart-container{
+        grid-template-columns: repeat(1,minmax(200px,500px));
+    }
+    .feature-header{
+        font-size: 1.7rem;
+    }
+
+}
