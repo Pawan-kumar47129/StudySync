@@ -32,6 +32,7 @@ body {
     width: 100vw;
     background-color: #B4C4BD;
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     border: none;
@@ -312,7 +313,7 @@ body {
     display: flex;
     width: 50%;
     height: 100%;
-    padding-left: 1rem;
+    padding-left: 2rem;
     align-items: center;
 
 }
@@ -336,13 +337,15 @@ body {
     }
     .hero-div {
         flex-direction: column;
-        gap: 2rem;
+        row-gap: 2rem;
         justify-content: center;
     }
 
     .hero-right {
         width: 100%;
         justify-content: center;
+        align-items: center;
+        padding:0;
     }
 
     .hero-left {
