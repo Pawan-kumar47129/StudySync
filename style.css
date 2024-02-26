@@ -30,6 +30,7 @@ body {
 /*  header section css*/
 .header {
     width: 100vw;
+    height: 70px;
     background-color: #B4C4BD;
     position: fixed;
     z-index: 1000;
