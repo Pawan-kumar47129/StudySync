@@ -768,7 +768,7 @@ body {
 .link-item-box{
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap: 1rem;
 }
 .footer-menu-link{
     color: var(--gray);
