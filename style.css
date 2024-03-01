@@ -167,7 +167,9 @@ body {
         justify-content: center;
         align-items: center;
     }
-
+    #Mobile-bar{
+        padding-right: 5px;
+    }
     .navbar {
         position: absolute;
         width: 100%;
