@@ -1,2 +1,2 @@
 # StudySync
-Website layout
+<p> Complete Website layout with all section</p>
